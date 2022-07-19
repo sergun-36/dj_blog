@@ -8,6 +8,6 @@ urlpatterns = {
 	#post views
 	path('', views.post_list, name = 'post_list'),
 	path('<int:year>/<int:month>/<int:day><slug:post>/',
-		views.post_details,
-		name = 'post_details')
+		views.post_detail,
+		name = 'post_detail')
 }
